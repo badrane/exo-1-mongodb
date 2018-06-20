@@ -16,20 +16,30 @@
 <body>
     <div class="container">
 
+        <!-- afficher les données de personnages dans mongo -->
 
     <div class="text-center">
         <h1>Mes infos</h1>
-        <table class="tab-border col-sm-4 offset-4">
+        <table id="infos" class="tab-border col-sm-4 offset-4">
             <tr class="tab-border">
                 <td class="tab-border">name</td>
                 <td class="tab-border">genre</td>
             </tr>
-            <tr id="infos">
-
-            </tr>
+            
         </table>
-
     </div>
+
+    <!-- ajout de donnée dans mongo -->
+
+    <div class="text-center mt-5">
+            <h1>ajout infos</h1>
+            <form action="">
+                <input type="text" placeholder="name" id="name">
+                <input type="text" placeholder="genre" id="gender">
+            </form>
+            <button id="send" class="btn btn-secondary"><span>send</span></button>
+    
+        </div>
 </div>
 
     <!-- Optional JavaScript -->
@@ -40,6 +50,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
         <script src="script.js"></script>
+        <script src="ajoutdata.js"></script>
 </body>
 
 </html>
